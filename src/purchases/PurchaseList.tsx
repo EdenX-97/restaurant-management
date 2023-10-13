@@ -131,7 +131,7 @@ const PurchaseList = () => {
                     marginTop: '0.5em'
                 }}
             >
-                <TabbedDatagrid />
+                <TabbedDatagrid/>
             </InfiniteList>
         </div>
     )
@@ -202,6 +202,7 @@ const TabbedDatagrid = () => {
                     <DatagridConfigurable
                         rowClick="edit"
                         omit={['id', 'supplier_name']}
+                        bulkActionButtons={false}
                     >
                         <TextField source="id" />
                         <TextField label="Amount" source="order_amount" />
